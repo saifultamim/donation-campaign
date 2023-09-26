@@ -11,10 +11,12 @@ import Donation from './components/Donation/Donation.jsx';
 import Statistics from './components/Statistics/Statistics.jsx';
 import Navbar from './components/Home/Navbar.jsx';
 import Carddetails from './components/Carddetails/Carddetails.jsx';
+import Donationerror from './components/Donation/Donationerror.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
     element:<App></App>,
+    errorElement:<Donationerror></Donationerror>,
     children:[
       {
         path:'/',

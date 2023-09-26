@@ -6,7 +6,7 @@
       "category": "Health",
       "category_bg_color": "#0052ff33",
       "card_bg_color": "#0052ff26",
-      "text_button_bg_color": "#0052FF",
+      "text_button_bg_color": "#088EFC",
       "description": "Health is holistic well-being, encompassing physical, mental, and social aspects. It's vital for a fulfilling life, requiring care and balance.",
       "price": "99.99"
     },
@@ -83,7 +83,7 @@
       "category": "Health",
       "category_bg_color": "#0052ff33",
       "card_bg_color": "#0052ff26",
-      "text_button_bg_color": "#0052FF",
+      "text_button_bg_color": "#088EFC",
       "description": "Health is holistic well-being, encompassing physical, mental, and social aspects. It's vital for a fulfilling life, requiring care and balance.",
       "price": "29.99"
     },
@@ -92,9 +92,9 @@
       "picture": "https://i.ibb.co/BKhpT6x/Rectangle-4284.png",
       "title": "Clean water for children",
       "category": "Health",
-      "category_bg_color": "#0052FF",
+      "category_bg_color": "#0052ff33",
       "card_bg_color": "#0052ff26",
-      "text_button_bg_color": "#333333",
+      "text_button_bg_color": "#088EFC",
       "description": "Health is holistic well-being, encompassing physical, mental, and social aspects. It's vital for a fulfilling life, requiring care and balance.",
       "price": "199.99"
     },

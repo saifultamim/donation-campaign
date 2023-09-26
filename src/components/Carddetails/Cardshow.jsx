@@ -1,16 +1,27 @@
 import Swal from 'sweetalert2'
 const Cardshow = ({find}) => {
+   
     console.log('ehello')
     const {id,picture,title,category,category_bg_color,card_bg_color,text_button_bg_color,description,price}=find;
     const handleDonate=()=>{
         console.log('ok donate')
         Swal.fire(
             'successfully',
-             
+          
           )
-        //   localStorage.setItem('proper',JSON.stringify(find))
-
+          const arr=[];
+          const getitem=JSON.parse(localStorage.getItem('fav'));
+          if(!getitem){
+            arr.push(find)
+            localStorage.setItem('fav',JSON.stringify(arr))
+          }
+          else{
+            arr.push(...getitem,find)
+            localStorage.setItem('fav',JSON.stringify(arr))
+          }
+          
     }
+ 
     return (
         <div className='w-6/12 '>
        
