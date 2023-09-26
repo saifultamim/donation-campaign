@@ -2,7 +2,7 @@
 
 const Specificdonation = ({getitem}) => {
     const {id,picture,title,category,category_bg_color,card_bg_color,text_button_bg_color,description,price}=getitem;
-    console.log('huhu',getitem)
+   
     return (
         <div className=''>
             
@@ -17,6 +17,8 @@ const Specificdonation = ({getitem}) => {
             <button style={{backgroundColor:text_button_bg_color}} className='text-[#FFF] p-2'>View Details</button>
             </div>
             </div>
+
+              
         </div>
     );
 };
