@@ -1,13 +1,11 @@
+import PropTypes from 'prop-types';
 import Swal from 'sweetalert2'
 const Cardshow = ({find}) => {
-   
-    console.log('ehello')
-    const {id,picture,title,category,category_bg_color,card_bg_color,text_button_bg_color,description,price}=find;
+    const {picture,category,text_button_bg_color,description,price}=find;
     const handleDonate=()=>{
         console.log('ok donate')
         Swal.fire(
             'successfully',
-          
           )
           const arr=[];
           const getitem=JSON.parse(localStorage.getItem('fav'));
@@ -24,8 +22,6 @@ const Cardshow = ({find}) => {
  
     return (
         <div className='w-6/12 '>
-       
-
         <div className='mt-20 mb-[140px]'>
         <div className='relative'>
   <img src={picture} alt="" className='w-full h-[450px]' />
@@ -35,7 +31,6 @@ const Cardshow = ({find}) => {
   </h2>
   
 </div>
-
            <h2 className='text-[#0B0B0B] text-4xl font-medium'>{category}</h2>
            <p className='text-[#0b0b0bb3] w-full'>{description}</p>
         </div>
@@ -44,5 +39,7 @@ const Cardshow = ({find}) => {
        
     );
 };
-
+Cardshow.propTypes={
+  find:PropTypes.object,
+  }
 export default Cardshow;

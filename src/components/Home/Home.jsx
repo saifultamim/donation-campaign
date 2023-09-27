@@ -1,14 +1,10 @@
 import {useLoaderData} from "react-router-dom";
 import Navbar from "./Navbar";
 import Cards from "./Cards";
-
 const Home = () => {
     const donationCards=useLoaderData();
-    console.log(donationCards);
     return (
         <div className=''>
-        
-            
            <div className='bg-[#C5C5C5]'>
            <Navbar></Navbar>
            </div>
@@ -19,12 +15,7 @@ const Home = () => {
            }
            </div>
            </div>
-          
-           
-          
-          
-        </div>
+           </div>
     );
 };
-
 export default Home;

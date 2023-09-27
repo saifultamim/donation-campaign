@@ -37,12 +37,14 @@ const router = createBrowserRouter([
      },
      {
       path:'/carddetails/:id',
-      // loader:({params})=>fetch(`/Donation.json/${params.id}`),
       element:<Carddetails></Carddetails>
-     }
+     }, 
     ]
-  }
-    
+  },
+  {
+    path:'/',
+    element:<App></App>
+  }  
 ]);
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

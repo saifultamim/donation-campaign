@@ -1,7 +1,6 @@
-
-
+import PropTypes from 'prop-types';
 const Specificdonation = ({getitem}) => {
-    const {id,picture,title,category,category_bg_color,card_bg_color,text_button_bg_color,description,price}=getitem;
+    const {picture,title,category,card_bg_color,text_button_bg_color,price}=getitem;
    
     return (
         <div className=''>
@@ -16,11 +15,11 @@ const Specificdonation = ({getitem}) => {
             <h2 className='font-bold' style={{color:text_button_bg_color}}>${price}</h2>
             <button style={{backgroundColor:text_button_bg_color}} className='text-[#FFF] p-2'>View Details</button>
             </div>
-            </div>
-
-              
+            </div>     
         </div>
     );
 };
-
+Specificdonation.propTypes={
+    getitem:PropTypes.object,
+    }
 export default Specificdonation;

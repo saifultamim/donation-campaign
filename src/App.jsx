@@ -1,22 +1,15 @@
-
 import {Outlet } from 'react-router-dom'
 import './App.css'
 import Header from './components/Home/Header'
-
 function App() {
  
   return (
     <>
-         <div>
-        
+         <div  className=''>
          <Header></Header>
          <Outlet></Outlet>
-         </div>
-           
-     
-      
+         </div>  
     </>
   )
 }
-
 export default App
