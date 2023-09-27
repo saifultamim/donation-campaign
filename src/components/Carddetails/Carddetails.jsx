@@ -16,6 +16,6 @@ const Carddetails = () => {
                find?<Cardshow find={find}></Cardshow>:'not ok'
             } 
         </div>
-    );
+    ); 
 };
 export default Carddetails;
